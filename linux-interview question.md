@@ -71,6 +71,20 @@ displays the entries in the routing table, as well as the means by which they we
 ![image](https://user-images.githubusercontent.com/54719289/117196947-14033980-addf-11eb-9a11-6cfb6b791d76.png)
 
 
+chmod:
+=====
+chmod is the command and system call used to change the access permissions of file system objects (files and directories) sometimes known as modes. ... The name is an abbreviation of change mode.
+
+For ex: chmod a+x /entrypoint.sh    ==> all users have permission to exeucte the file
+        chmod u+x    ==> the user who owns has execution permission
+        chmod g+x   ==> the other user in the group has ececution permission
+        chmod o+x   ==> the other user who is not in the group has ececution permission
+        
+the user who owns it (u), 
+other users in the file's group (g), 
+other users not in the file's group (o), 
+or all users (a)
+
 ## Topic#2 : Slightly more advanced Linux:
 
 init
