@@ -1,0 +1,113 @@
+# Linux for devops:
+
+Basic Linux Interview Questions (ssh, ls, cd, cp, pwd, rsync, systemctl, df, du, ip addr, ip route)
+ssh
+===
+
+SSH (Secure Shell) is a network protocol that enables secure remote connections between two systems
+
+ls
+==
+
+list of files/folders presnt in the current location
+
+cd
+==
+Change directory
+
+cp
+==
+
+Copying the file from source to directory
+
+pwd
+===
+
+displays current location
+
+rsync
+======
+
+scp provides a cp like method to copy files from one machine to a remote machine over a secure SSH connection. rsync allows you to syncronise remote folders. 
+They are different programs and both have their uses. scp is always secure, whereas rsync must travel over SSH to be secure.
+
+Note: Cant copy the folder using this command...only files
+
+systemctl
+=========
+The systemctl command is a new tool to control the systemd system and service. This is the replacement of old SysV init system management
+
+using this command, we can enable ,start ,restart and stop the services.
+
+df
+===
+
+Disk file
+used to display the disk space used in the file system. The 'df' stands for "disk filesystem." 
+It defines the number of blocks used, the number of blocks available, and the directory where the file system is mounted.
+
+du
+==
+du command, short for “disk usage” reports the estimated amount of disk space used by given files or directories. 
+It is practically useful for finding files and directories taking up large amounts of disk space
+
+ip addr 
+=======
+
+To list all network interfaces and the associated IP address, use the command: ip addr show.
+
+ip route: Gateway
+================
+
+displays the entries in the routing table, as well as the means by which they were determined 
+(directly connected network, static route, or which routing protocol was used to select the route).
+
+Slightly more advanced Linux:
+
+init
+====
+
+
+systemd
+=======
+
+
+systemctl
+=========
+
+
+journalctl
+==========
+
+
+some linux philosophy, /proc filesystem)
+
+
+
+open-ended questions and troubleshooting:
+top
+===
+
+atop
+====
+
+htop
+=====
+
+glances
+=========
+
+lsof 
+====
+
+proc 
+====
+
+ss or netstat 
+=============
+
+inodes
+======
+
+
+discussing past projects, planning a hypothetical implementation/project
