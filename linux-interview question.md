@@ -225,4 +225,4 @@ An inode is a data structure used to keep information about a file on your hosti
 
 discussing past projects, planning a hypothetical implementation/project
 
-# How do you configure and do infrastructure struacture settings.
+# How do you configure and infrastructure structure settings.
