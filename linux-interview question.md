@@ -90,17 +90,30 @@ or all users (a)
 init
 ====
 
+special process that linux kernal starts that init is reponsible for starting all services and units.Also responsible for repairing 
+
+The init is a daemon process which starts as soon as the computer starts and continue running till, it is shutdown
+
 
 systemd
 =======
+
+Systemd provides a standard process for controlling what programs run when a Linux system boots up
+systemd – A init replacement daemon designed to start process in parallel, implemented in a number of standard distribution.
 
 
 systemctl
 =========
 
+The systemctl command is a new tool to control the systemd system and service(start/restart/stop)
+
 
 journalctl
 ==========
+
+Journalctl is a utility for querying and displaying logs from journald, systemd's logging service. Since journald stores log data in a binary format instead of a plaintext format, journalctl is the standard way of reading log messages processed by journald.
+
+![image](https://user-images.githubusercontent.com/54719289/117200493-73634880-ade3-11eb-8eee-c28d20e4747c.png)
 
 
 some linux philosophy, /proc filesystem)
