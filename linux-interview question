@@ -1,5 +1,5 @@
 # Linux for devops:
-Topic#1 Basic Linux Interview Questions 
+## Topic#1 Basic Linux Interview Questions 
 ssh
 ===
 
@@ -71,7 +71,7 @@ displays the entries in the routing table, as well as the means by which they we
 ![image](https://user-images.githubusercontent.com/54719289/117196947-14033980-addf-11eb-9a11-6cfb6b791d76.png)
 
 
-Topic#2 : Slightly more advanced Linux:
+## Topic#2 : Slightly more advanced Linux:
 
 init
 ====
@@ -93,7 +93,7 @@ some linux philosophy, /proc filesystem)
 
 
 
-open-ended questions and troubleshooting:
+## Topic:3 open-ended questions and troubleshooting:
 top
 ===
 
