@@ -25,7 +25,65 @@
 
 ![image](https://user-images.githubusercontent.com/54719289/118533269-c7552200-b73f-11eb-9cc2-070f94580ba8.png)
 
-```  With the help git rm --cached filename ,we can delete the particular file before commiting ```
+```  With the help git rm --cached filename  ``` 
+we can delete the particular file before commiting ```
 
 ![image](https://user-images.githubusercontent.com/54719289/118533415-f53a6680-b73f-11eb-886e-624e9cfdce7a.png)
+
+
+# Maven Question
+![image](https://user-images.githubusercontent.com/54719289/118533736-53674980-b740-11eb-8eb3-76e497c338b3.png)
+
+# Refer this link : https://github.com/logambigaik/Maven_Examples.git
+
+  >> Step2 : In main module(parent module - pom.xml we need to use pom as packaging and also include those main module and as well the submodule in modules tag
+
+```
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+
+  <groupId>calculator</groupId>
+  <artifactId>calculator-main</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <name>calculator_addition</name>
+
+  <modules>
+    <module>addition</module>
+    <module>substraction</module>
+  </modules>
+```
+
+  >> Step 2 : Also in sub module, we need to include the parent tag inside child module pom.xml
+  
+  ```
+  <?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+      <groupId>calculator</groupId>
+      <artifactId>calculator-main</artifactId>
+      <version>1.0</version>
+    </parent>
+    
+   ```
+  
+  >> Step 3: run mvn tidy:pom command before mvn clean install . Now, you could see jar files under target folder in submodules.
+  
+  
+
+  
+  
+   
+
+
+
+
+
+
 
