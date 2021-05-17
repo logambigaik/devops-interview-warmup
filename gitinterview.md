@@ -19,3 +19,13 @@
 ![image](https://user-images.githubusercontent.com/54719289/118532546-fb7c1300-b73e-11eb-8c82-2c4c11b96324.png)
 
 ## There is a disadvantage in submodule. Submodules dont track refs or branch and are not automatically updated when host repo is updated
+
+
+# Another question:
+
+![image](https://user-images.githubusercontent.com/54719289/118533269-c7552200-b73f-11eb-9cc2-070f94580ba8.png)
+
+```  With the help git rm --cached filename ,we can delete the particular file before commiting ```
+
+![image](https://user-images.githubusercontent.com/54719289/118533415-f53a6680-b73f-11eb-886e-624e9cfdce7a.png)
+
