@@ -19,7 +19,7 @@ Best suitable for production
 Supports rolling updates
 ```
 
-# Headless service with mysql master slave usecase
+# Headless service with mysql master slave usecase( Note:: ClusterIP should be none in service.yaml for headless service)
 
 ![image](https://user-images.githubusercontent.com/54719289/118477048-2c8c2180-b706-11eb-86d7-fff405db4624.png)
 
@@ -37,7 +37,7 @@ Its like data consistency. Here the problem is with ClusterIP, to avoid these ki
 ![image](https://user-images.githubusercontent.com/54719289/118477929-2fd3dd00-b707-11eb-91f9-01b3561c7c7d.png)
 
 ```
-Why do we need to statefulset is if the pod is crashed then the next pod wont start with same naming convention. In deployement, the suffix of podname 
+Why do we need to use statefulset is if the pod is crashed then the next pod wont start with same naming convention. In deployement, the suffix of podname 
 is always ends with aphanumeric but in statefulset , the pod name ends with ordinal index like mysql-0,mysql-1 like that.
 
 Lets assume I have 3 replicas for mysql, here we will consider mysql-0 as primary  in headless service and remaining 2 pods 
