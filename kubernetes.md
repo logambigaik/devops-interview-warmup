@@ -23,8 +23,9 @@ Supports rolling updates
 
 ![image](https://user-images.githubusercontent.com/54719289/118477048-2c8c2180-b706-11eb-86d7-fff405db4624.png)
 
-Statefulset : 
+  >>  Statefulset : 
 ![image](https://user-images.githubusercontent.com/54719289/118477455-9a384d80-b706-11eb-9388-f2eee63321eb.png)
+
 ![image](https://user-images.githubusercontent.com/54719289/118477521-ab815a00-b706-11eb-8f0c-0d232320f1ce.png)
 ![image](https://user-images.githubusercontent.com/54719289/118477556-b50ac200-b706-11eb-8b54-3f132a087852.png)
 
@@ -32,6 +33,7 @@ Statefulset :
 In this scenario, we have written few datas in Pod1 and Pod3 but when you are going to read the data in Pod2 , the data wont be available . 
 Its like data consistency. Here the problem is with ClusterIP, to avoid these kind of scenario headless service comes in . Like 
 ```
+
 ![image](https://user-images.githubusercontent.com/54719289/118477929-2fd3dd00-b707-11eb-91f9-01b3561c7c7d.png)
 
 ```
@@ -42,7 +44,7 @@ Lets assume I have 3 replicas for mysql, here we will consider mysql-0 as primar
 are replicas of primary database mysql-0 . Whenever i write the data is mysql-0 ,i will take a backup and execute it  in mysql-1.
 The same i will do with mysql-2 pods like will take a backup of mysql-1 and execute it in mysql-2. Now, my datas are all in pods,the data are in sync.
 
-Now i create one more service as Cluster IP, with these im going to read the data of mysql-1 /mysql-2
+Now  created one more service as Cluster IP, with these im going to read the data of mysql-1 /mysql-2
 
 ```
 ![image](https://user-images.githubusercontent.com/54719289/118479712-44b17000-b709-11eb-8ee3-3034f952bd47.png)
